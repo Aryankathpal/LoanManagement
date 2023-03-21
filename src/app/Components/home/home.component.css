@@ -1,6 +1,7 @@
 .main{
-    background-color: red;
-    position:relative;
+    background-color: white;
+    position:absolute;
     margin: 20px;
-    margin-left: 270px;
+    margin-left: 300px;
+    border-radius: 0.8em;
 }

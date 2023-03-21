@@ -6,7 +6,7 @@ body{
 
 .sidebar{
    position: fixed;
-   width: 250px;
+   width: 270px;
    top:0;
    left: 0;
    bottom: 0;
@@ -22,7 +22,7 @@ body{
    font-family: "Rubik";
    letter-spacing: 2px;
    font-weight: 400;
-   margin: 0 0 0 20px;
+   margin: 0 0 50px 20px;
    font-size: 25px;
    text-transform: uppercase;
 }
@@ -32,18 +32,17 @@ body{
    padding: 10px 20px;
    font-family: "Rubik";
    letter-spacing: 2px;
-   margin-left: 20px;
    border-radius: 1em;
-   margin-right: 30px;
+   margin:10px 40px 10px 30px;
 }
 a.nav-link.active{
-    margin-right: 30px;
+    margin-right: 40px;
     color: white;
     border-radius: 1em;
     background-color: blue;
 }
 a:hover{
-   margin-right: 30px;
+   margin-right: 40px;
    color: white;
    border-radius: 1em;
    background-color: blue;
@@ -53,3 +52,12 @@ a.nav-link{
     color:white;
 }
 
+.logout{
+   position: absolute;
+   bottom: 50px;
+   width: 100%;
+}
+.img{
+   height: 200px;
+   margin-left: 20px;
+}

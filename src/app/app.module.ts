@@ -7,6 +7,9 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { HomeComponent } from './Components/home/home.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { ApplyComponent } from './Components/apply/apply.component';
+import { HistoryComponent } from './Components/history/history.component';
+import { CalcComponent } from './Components/calc/calc.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
     SidebarComponent,
     HomeComponent,
     DashboardComponent,
+    ApplyComponent,
+    HistoryComponent,
+    CalcComponent,
 
   ],
   imports: [
