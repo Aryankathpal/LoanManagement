@@ -1,14 +1,21 @@
-
 <div class="content">
     <h1>EMI Calculator</h1>
-<form>
-    <div class="range">
-    <label for="customRange1" class="form-label">Loan Amount</label>
-<input type="range" class="form-range" id="customRange1">
-<label for="customRange1" class="form-label">Rate of Interest</label>
-<input type="range" class="form-range" id="customRange1">
-<label for="customRange1" class="form-label">Loan Tenture</label>
-<input type="range" class="form-range" id="customRange1">
 </div>
-</form>
-</div>
+<mat-card class="example-result-card">
+    <mat-card-content>
+      <h2>Result</h2>
+  
+      <div class="example-label-container">
+        <label id="example-name-label" class="example-name-label">Value</label>
+        <label class="example-value-label">{{value}}</label>
+        {{value}}
+      </div>
+      <mat-slider
+          class="example-margin"
+          [(ngModel)]="value" min="min" max="max" step="step"
+          matSliderThumb>
+      </mat-slider>
+
+      <input [(ngModel)]="value" type="number"/>
+    </mat-card-content>
+  </mat-card>
