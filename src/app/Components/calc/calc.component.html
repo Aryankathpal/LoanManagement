@@ -1,21 +1,64 @@
 <div class="content">
     <h1>EMI Calculator</h1>
-</div>
 <mat-card class="example-result-card">
-    <mat-card-content>
-      <h2>Result</h2>
-  
-      <div class="example-label-container">
-        <label id="example-name-label" class="example-name-label">Value</label>
-        <label class="example-value-label">{{value}}</label>
-        {{value}}
-      </div>
-      <mat-slider
-          class="example-margin"
-          [(ngModel)]="value" min="min" max="max" step="step"
-          matSliderThumb>
-      </mat-slider>
 
-      <input [(ngModel)]="value" type="number"/>
-    </mat-card-content>
+    <!-- Loan Amount ---------------------------------- -->
+
+    <mat-card-content>    
+        <div class="example-label-container">
+          <label id="example-name-label" class="example-name-label">Loan Amount</label>
+          <label class="example-value-label"><h2>Rs. {{amount.value}}</h2></label>
+        </div>
+        <mat-slider
+            class="example-margin"
+            [(ngModel)]="amount.value"
+            min={{amount.min}}
+            max={{amount.max}}
+            step={{amount.step}}
+            matSliderThumb>
+            <input  matSlideThumb [(ngModel)] ="amount.value">
+        </mat-slider>
+  
+        <input class="form-control" [(ngModel)]="amount.value" type="number"/>
+      </mat-card-content>
+      
+      <!-- ROI ----------------------------- -->
+
+      <mat-card-content>    
+        <div class="example-label-container">
+          <label id="example-name-label" class="example-name-label">Rate of Interest</label>
+          <label class="example-value-label"><h2>{{roi.value}}%</h2></label>
+        </div>
+        <mat-slider
+            class="example-margin"
+            [(ngModel)]="roi.value"
+             min={{roi.min}}
+             max={{roi.max}}
+             step={{roi.step}}
+            matSliderThumb>
+            <input matSlideThumb [(ngModel)] ="roi.value">
+        </mat-slider>
+  
+        <input class="form-control" [(ngModel)]="roi.value" type="number"/>
+      </mat-card-content>
+
+      <!-- Loan Tenture ---------------------------------- -->
+
+      <mat-card-content class="card-content">
+        <div class="example-label-container">
+          <label id="example-name-label" class="example-name-label">Loan Tenture</label>
+          <label class="example-value-label"><h2>{{tenture.value}} yr</h2></label>
+        </div>
+        <mat-slider
+            class="example-margin"
+            [(ngModel)]="tenture.value"
+             min={{tenture.min}}
+             max={{tenture.max}}
+             step={{tenture.step}}
+            matSliderThumb>
+            <input matSlideThumb [(ngModel)] ="tenture.value">
+        </mat-slider>
+        <input class="form-control" [(ngModel)]="tenture.value" type="number"/>
+      </mat-card-content>
   </mat-card>
+  </div>
